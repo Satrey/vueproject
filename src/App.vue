@@ -34,6 +34,12 @@ export default {
     chackStatus: false,
   }),
 
+  computed: {
+    displayList(){
+      return this.list();
+    },
+  },
+
   methods: {
     addNewTask(task) {
       console.log('New task recieved from TaskInput component : ', task);
